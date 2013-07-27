@@ -1,7 +1,7 @@
 {
   "name": "global-leak-hunter",
   "bin": "./bin/cli.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Find global leaks using static analysis",
   "repository": {
     "type": "git",
