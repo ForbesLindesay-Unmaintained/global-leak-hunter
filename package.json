@@ -3,13 +3,6 @@
   "bin": "./bin/cli.js",
   "version": "0.0.0",
   "description": "Find global leaks using static analysis",
-  "devDependencies": {
-    "win-spawn": "~1.1.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "cd bin && win-line-endings && cd .."
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ForbesLindesay/global-leak-hunter.git"
@@ -17,10 +10,14 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "readable-stream": "~1.0.2",
-    "optimist": "~0.5.2",
-    "readdirp": "~0.2.4",
     "lexical-scope": "0.0.13",
-    "bash-color": "0.0.3"
+    "uglify-js": "~2.3.6",
+    "promise": "~3.2.0"
+  },
+  "devDependencies": {
+    "linify": "~1.0.1"
+  },
+  "scripts": {
+    "prepublish": "linify transform bin"
   }
 }
