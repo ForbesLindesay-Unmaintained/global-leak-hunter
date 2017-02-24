@@ -10,9 +10,9 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "lexical-scope": "0.0.13",
-    "uglify-js": "~2.3.6",
-    "promise": "~3.2.0"
+    "lexical-scope": "1.2.0",
+    "uglify-js": "~2.7.5",
+    "promise": "~7.1.1"
   },
   "devDependencies": {
     "linify": "~1.0.1"
